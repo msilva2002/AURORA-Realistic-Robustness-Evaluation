@@ -1,0 +1,95 @@
+[
+  {
+    "feature_label": "label"
+  },
+  {
+    "attackName": "HopSkipJump",
+    "batch_size": 64,
+    "init_eval": 100,
+    "init_size": 100,
+    "max_eval": 10000,
+    "max_iter": 50,
+    "norm": "inf"
+  },
+  {
+    "attackName": "HopSkipJumpTargeted",
+    "batch_size": 64,
+    "init_eval": 100,
+    "init_size": 100,
+    "max_eval": 10000,
+    "max_iter": 50,
+    "norm": "inf"
+  },
+  {
+    "abort_early": true,
+    "attackName": "ZerothOrderOptimization",
+    "batch_size": 1,
+    "binary_search_steps": 1,
+    "confidence": 0,
+    "initial_const": 0.001,
+    "learning_rate": 0.01,
+    "max_iter": 10,
+    "nb_parallel": 15,
+    "use_importance": true,
+    "use_resize": true,
+    "variable_h": 0.0001
+  },
+  {
+    "abort_early": true,
+    "attackName": "ZerothOrderOptimizationTargeted",
+    "batch_size": 1,
+    "binary_search_steps": 1,
+    "confidence": 0,
+    "initial_const": 0.001,
+    "learning_rate": 0.01,
+    "max_iter": 10,
+    "nb_parallel": 15,
+    "use_importance": true,
+    "use_resize": true,
+    "variable_h": 0.0001
+  },
+  {
+    "attackName": "CarliniWagner",
+    "batch_size": 1,
+    "binary_search_steps": 10,
+    "confidence": 0,
+    "initial_const": 0.01,
+    "learning_rate": 0.01,
+    "max_doubling": 5,
+    "max_halving": 5,
+    "max_iter": 10
+  },
+  {
+    "attackName": "CarliniWagnerTargeted",
+    "batch_size": 1,
+    "binary_search_steps": 10,
+    "confidence": 0,
+    "initial_const": 0.01,
+    "learning_rate": 0.01,
+    "max_doubling": 5,
+    "max_halving": 5,
+    "max_iter": 10
+  },
+  {
+    "attackName": "BoundaryAttack",
+    "batch_size": 64,
+    "delta": 0.01,
+    "epsilon": 0.01,
+    "init_size": 100,
+    "max_iter": 300,
+    "min_epsilon": 0,
+    "num_trial": 25,
+    "step_adapt": 0.667
+  },
+  {
+    "attackName": "BoundaryAttackTargeted",
+    "batch_size": 64,
+    "delta": 0.01,
+    "epsilon": 0.01,
+    "init_size": 100,
+    "max_iter": 300,
+    "min_epsilon": 0,
+    "num_trial": 25,
+    "step_adapt": 0.667
+  }
+]
